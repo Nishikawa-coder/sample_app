@@ -4,7 +4,7 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = '<あなたのHerokuサブドメイン名>.herokuapp.com'
+  host = 'floating-spire-67266.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :port           => ENV['MAILGUN_SMTP_PORT'],
